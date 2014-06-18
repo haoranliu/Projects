@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href='#' class="brand"> Simple System</a>
+				<ul class="nav">
+					<li><%= link_to "All Statuses", statuses_path %></li>
+			</div>
+		</div>
+	</div>
+	<div class="container">		
+	<%= yield %>
+	</div>
 </body>
 </html>
